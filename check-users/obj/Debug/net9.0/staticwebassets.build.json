@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "kKVwqrOBV6JJL9N18IwaEJ+86gLV/ckactOjbQO+pBo=",
+  "Source": "check-users",
+  "BasePath": "_content/check-users",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
