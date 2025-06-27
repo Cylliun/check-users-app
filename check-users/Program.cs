@@ -1,5 +1,7 @@
 
 using check_users.Data;
+using check_users.Repositories;
+using check_users.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace check_users
@@ -17,6 +19,8 @@ namespace check_users
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
+
+            builder.Services.AddScoped<IUserRepository, UserServices>();
 
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
