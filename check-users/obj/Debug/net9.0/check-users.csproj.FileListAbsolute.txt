@@ -165,3 +165,4 @@ C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\chec
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\check-users.genruntimeconfig.cache
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\ref\check-users.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\Scalar.AspNetCore.dll
