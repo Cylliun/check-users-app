@@ -1,6 +1,38 @@
 [
   {
     "ContainingType": "check_users.Controllers.UserController",
+    "Method": "Id",
+    "RelativePath": "User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "check_users.Controllers.UserController",
+    "Method": "Email",
+    "RelativePath": "User/email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "check_users.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "check_users.Controllers.UserController",
     "Method": "Register",
     "RelativePath": "User/register",
     "HttpMethod": "POST",
