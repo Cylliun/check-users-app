@@ -83,9 +83,27 @@ namespace check_users
             return response;
         }
 
-        public Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(DateTime? checkOutTime)
+        public async Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(DateTime? checkOutTime)
         {
-            throw new NotImplementedException();
+            ResponseModel<PunchClock> response = new ResponseModel<PunchClock>();
+
+            try
+            {
+
+                _context.clocks.Update();
+                await _context.SaveChangesAsync();
+                
+                response.Dados = checkOutTime;
+                response.Message = "Checkout realizado com sucesso";
+                response.Status = true;
+
+            } catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+              
+            }
+            return response;
         }
     }
 }
