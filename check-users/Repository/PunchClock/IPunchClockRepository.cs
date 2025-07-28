@@ -6,7 +6,7 @@ namespace check_users
     {
         Task<ResponseModel<PunchClock>> CreateAsync(PunchClock punchClock);
         Task<ResponseModel<PunchClock>> GetByUserIdAsync(int userId);
-        Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(DateTime? checkOutTime);
+        Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(PunchClock punchClock);
         Task<ResponseModel<PunchClock>> GetTodayPunchAsync(DateTime checkInTime);
     }
 }

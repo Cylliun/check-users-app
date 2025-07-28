@@ -37,6 +37,16 @@ namespace check_users
 
         public async Task<ResponseModel<User>> GetByEmailAsync(UserDto userDto)
         {
+
+            if (userDto.Email == null)
+            {
+                return new ResponseModel<User>
+                {
+                    Status = false,
+                    Message = "Nenhum usuário foi encontrado"
+                };
+            }
+   
             return await _userRepository.GetByEmailAsync(userDto.Email);
         }
 

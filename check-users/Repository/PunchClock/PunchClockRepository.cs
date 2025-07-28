@@ -83,17 +83,17 @@ namespace check_users
             return response;
         }
 
-        public async Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(DateTime? checkOutTime)
+        public async Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(PunchClock punchClock)
         {
             ResponseModel<PunchClock> response = new ResponseModel<PunchClock>();
 
             try
             {
 
-                _context.clocks.Update();
+                _context.clocks.Update(punchClock);
                 await _context.SaveChangesAsync();
                 
-                response.Dados = checkOutTime;
+                response.Dados = punchClock;
                 response.Message = "Checkout realizado com sucesso";
                 response.Status = true;
 
