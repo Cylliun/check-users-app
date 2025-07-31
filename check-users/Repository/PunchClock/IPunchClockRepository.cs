@@ -4,9 +4,10 @@ namespace check_users
 {
     public interface IPunchClockRepository
     {
-        Task<ResponseModel<PunchClock>> CreateAsync(PunchClock punchClock);
-        Task<ResponseModel<PunchClock>> GetByUserIdAsync(int userId);
-        Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(PunchClock punchClock);
-        Task<ResponseModel<PunchClock>> GetTodayPunchAsync(DateTime checkInTime);
+        Task<PunchClock?> CreateAsync(PunchClock punchClock);
+        Task<PunchClock?> GetByUserIdAsync(int userId);
+        Task<PunchClock?> GetTodayPunchAsync(int userId);
+        void Update(PunchClock punchClock);
+        Task SaveChangesAsync();
     }
 }
