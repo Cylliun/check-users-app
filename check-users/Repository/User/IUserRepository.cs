@@ -4,8 +4,8 @@ namespace check_users.Repository
 {
     public interface IUserRepository
     {
-        Task<ResponseModel<User>> GetByEmailAsync(string email);
-        Task<ResponseModel<User>> CreateUserAsync(User user);
-        Task<ResponseModel<User>> GetByIdAsync(int id);
+        Task<User?> GetByEmailAsync(string email);
+        Task<User> CreateUserAsync(User user);
+        Task<User?> GetByIdAsync(int id);
     }
 }
