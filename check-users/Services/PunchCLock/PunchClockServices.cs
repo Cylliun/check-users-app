@@ -1,8 +1,7 @@
 ﻿using check_users.Dtos;
 using check_users.Models;
-using check_users.Services.PunchCLock;
 
-namespace check_users.Services.PunchClock
+namespace check_users.Services
 {
     public class PunchClockServices : IPunchClockServices
     {
@@ -108,13 +107,13 @@ namespace check_users.Services.PunchClock
             return response;
         }
 
-        public async Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(int userId, DateTime checkOutTime)
+        public async Task<ResponseModel<PunchClock>> UpdateCheckOutAsync(PunchClockDto punchClockDto)
         {
             var response = new ResponseModel<PunchClock>();
 
             try
             {
-                var clock = await _repository.GetTodayPunchAsync(userId);
+                var clock = await _repository.GetTodayPunchAsync(punchClockDto.IdUser);
 
                 if (clock == null)
                 {
@@ -123,7 +122,7 @@ namespace check_users.Services.PunchClock
                     return response;
                 }
 
-                clock.CheckOutTime = checkOutTime;
+                clock.CheckOutTime = punchClockDto.CheckOutTime;
 
                 _repository.Update(clock);
                 await _repository.SaveChangesAsync();
@@ -141,5 +140,6 @@ namespace check_users.Services.PunchClock
             }
             return response;
         }
+       
     }
 }

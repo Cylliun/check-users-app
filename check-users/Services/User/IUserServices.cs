@@ -6,7 +6,7 @@ namespace check_users
     public interface IUserServices
     {
         Task<ResponseModel<User>> CreateUserAsync(UserDto userDto);
-        Task<ResponseModel<User>> GetByEmailAsync(UserDto userDto);
+        Task<ResponseModel<User>> GetByEmailAsync(string email);
         Task<ResponseModel<User>> GetByIdAsync(string id);
     }
 }

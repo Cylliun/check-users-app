@@ -13,25 +13,25 @@ namespace check_users.Controllers
             _userServices = userServices;
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register(UserDto userDto)
+        [HttpPost]
+        public async Task<IActionResult> CreateUser([FromBody]UserDto userDto)
         {
             var response = await _userServices.CreateUserAsync(userDto);
             if (!response.Status)
             {
-                return BadRequest(response.Message);
+                return BadRequest(response);
             }
 
             return Ok(response);
         }
 
         [HttpGet("email")]
-        public async Task<IActionResult> Email(UserDto userDto)
+        public async Task<IActionResult> Email([FromQuery] string email)
         {
-            var response = await _userServices.GetByEmailAsync(userDto);
+            var response = await _userServices.GetByEmailAsync(email);
             if (!response.Status)
             {
-                return BadRequest(response.Message);
+                return BadRequest(response);
             }
 
             return Ok(response);

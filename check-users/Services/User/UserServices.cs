@@ -48,11 +48,11 @@ namespace check_users.Services
             return response;
         }
 
-        public async Task<ResponseModel<User>> GetByEmailAsync(UserDto userDto)
+        public async Task<ResponseModel<User>> GetByEmailAsync(string email)
         {
             var response = new ResponseModel<User>();
 
-            if (string.IsNullOrEmpty(userDto.Email))
+            if (string.IsNullOrEmpty(email))
             {
                 response.Status = false;
                 response.Message = "Email inválido.";
@@ -61,7 +61,7 @@ namespace check_users.Services
 
             try
             {
-                var user = await _userRepository.GetByEmailAsync(userDto.Email);
+                var user = await _userRepository.GetByEmailAsync(email);
 
                 if (user == null)
                 {
@@ -114,7 +114,7 @@ namespace check_users.Services
                 response.Status = false;
                 response.Message = ex.Message;
             }
-            ''
+            
             return response;
         }
 
