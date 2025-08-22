@@ -25,9 +25,10 @@ namespace check_users.Repositories
                 c.CheckInTime.Date == DateTime.Today);
         }
 
-        public async Task CreateAsync(PunchClock punchClock)
+        public async Task<PunchClock?> CreateAsync(PunchClock punchClock)
         {
             await _context.clocks.AddAsync(punchClock);
+            return punchClock;
         }
 
         public void Update(PunchClock punchClock)

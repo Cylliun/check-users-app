@@ -26,7 +26,7 @@ namespace check_users.Controllers
         }
 
         [HttpGet("email")]
-        public async Task<IActionResult> Email([FromQuery] string email)
+        public async Task<IActionResult> GetByEmail([FromQuery] string email)
         {
             var response = await _userServices.GetByEmailAsync(email);
             if (!response.Status)

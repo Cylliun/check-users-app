@@ -26,15 +26,29 @@ namespace check_users.Controllers
 
             return Ok(response);
         }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetByUser([FromQuery] int userId)
+
+        [HttpGet("/user/{id}")]
+        public async Task<IActionResult> GetByUserId([FromRoute] int userId)
         {
             var response = await _clockRepository.GetByUserIdAsync(userId);
             if (!response.Status)
             {
-                return BadRequest(response);
+                return NotFound(response);
             }
             return Ok(response);
         }
+
+        [HttpGet("today")]
+        public async Task<IActionResult> GetTodayPunchClock([FromQuery] int userId)
+        {
+            var response = await _clockRepository.GetTodayPunchAsync(userId);
+            if (!response.Status)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
+
     }
 }
+

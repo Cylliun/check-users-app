@@ -1,6 +1,7 @@
 
 using check_users.Data;
 using check_users.Repository;
+using check_users.Services;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 

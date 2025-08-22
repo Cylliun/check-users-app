@@ -1,5 +1,74 @@
 [
   {
+    "ContainingType": "check_users.Controllers.PunchClockController",
+    "Method": "CreateClock",
+    "RelativePath": "PunchClock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "punchClockDto",
+        "Type": "check_users.Dtos.PunchClockDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "check_users.Controllers.PunchClockController",
+    "Method": "GetTodayPunchClock",
+    "RelativePath": "PunchClock/today",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "check_users.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "check_users.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "check_users.Controllers.PunchClockController",
+    "Method": "GetByUserId",
+    "RelativePath": "user/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "check_users.Controllers.UserController",
     "Method": "Id",
     "RelativePath": "User/{id}",
@@ -17,32 +86,16 @@
   },
   {
     "ContainingType": "check_users.Controllers.UserController",
-    "Method": "Email",
+    "Method": "GetByEmail",
     "RelativePath": "User/email",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userDto",
-        "Type": "check_users.Dtos.UserDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "check_users.Controllers.UserController",
-    "Method": "Register",
-    "RelativePath": "User/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userDto",
-        "Type": "check_users.Dtos.UserDto",
-        "IsRequired": true
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -55,13 +55,11 @@ C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\Syst
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Drawing.Common.dll
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Security.Permissions.dll
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -152,12 +150,6 @@ C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\scop
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets\msbuild.check-users.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets\msbuild.check-users.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets\msbuild.build.check-users.props
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.check-users.props
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.check-users.props
-C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\check-us.94DCC25D.Up2Date
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\check-users.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\refint\check-users.dll
@@ -166,3 +158,8 @@ C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\chec
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\ref\check-users.dll
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Eiji\codeLearning\Web\check-users-app\check-users\obj\Debug\net9.0\staticwebassets.build.json.cache
